@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Discover GrandVista Luxury Hotel, an elegant destination for exceptional accommodation, fine dining and memorable hospitality.">
+
+  <meta name="theme-color" content="#123d32">
+
+  <title>GrandVista Luxury Hotel | Experience Exceptional Hospitality</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <span class="loader-logo">GV</span>
+      <p>GRANDVISTA LUXURY HOTEL</p>
+      <span class="loader-line"></span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a href="index.html" class="hotel-logo">
+        <span class="logo-symbol">GV</span>
+
+        <span class="logo-text">
+          <strong>GRANDVISTA</strong>
+          <small>LUXURY HOTEL</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navWrap"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-wrap" id="navWrap">
+
+        <nav class="navbar">
+          <a href="index.html" class="active">Home</a>
+          <a href="rooms.html">Rooms & Suites</a>
+          <a href="services.html">Services</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="rooms.html" class="header-booking">
+          Explore Rooms <span>↗</span>
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+      <div class="hero-background"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-container">
+
+        <div class="hero-content" data-reveal>
+
+          <span class="hero-eyebrow">
+            <span></span>
+            A WORLD OF COMFORT AND ELEGANCE
+          </span>
+
+          <h1>
+            Discover A New
+            Standard Of
+            <em>Luxury Living.</em>
+          </h1>
+
+          <p>
+            Welcome to GrandVista Luxury Hotel, where thoughtful
+            hospitality, elegant surroundings and exceptional
+            experiences come together to create a stay worth remembering.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="rooms.html" class="btn btn-primary">
+              Explore Our Rooms <span>↗</span>
+            </a>
+
+            <a href="about.html" class="btn btn-outline">
+              Discover GrandVista
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <span class="trust-line"></span>
+            <span>COMFORT · STYLE · HOSPITALITY</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-side-label">
+        GRANDVISTA HOSPITALITY EXPERIENCE
+      </div>
+
+      <div class="hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-line"></span>
+      </div>
+
+    </section>
+
+    <!-- BOOKING INFORMATION -->
+    <section class="booking-section">
+
+      <div class="container">
+
+        <div class="booking-panel" data-reveal>
+
+          <div class="booking-intro">
+            <span class="section-eyebrow">PLAN YOUR STAY</span>
+            <h2>Your Stay Begins Here</h2>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+
+            <div class="booking-field">
+              <label for="checkIn">CHECK IN</label>
+              <input type="date" id="checkIn" required>
+            </div>
+
+            <div class="booking-field">
+              <label for="checkOut">CHECK OUT</label>
+              <input type="date" id="checkOut" required>
+            </div>
+
+            <div class="booking-field">
+              <label for="guests">GUESTS</label>
+              <select id="guests" required>
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+              </select>
+            </div>
+
+            <button type="submit" class="booking-submit">
+              Check Availability <span>↗</span>
+            </button>
+
+          </form>
+
+          <p class="booking-status" id="bookingStatus" aria-live="polite"></p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome-section section-padding">
+
+      <div class="container">
+
+        <div class="welcome-grid">
+
+          <div class="welcome-images" data-reveal>
+
+            <div class="welcome-main-image">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=85"
+                alt="Elegant luxury hotel guest room"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="welcome-small-image">
+              <img
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=85"
+                alt="Beautiful hotel swimming pool"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="welcome-image-label">
+              <strong>01</strong>
+              <span>THE ART OF HOSPITALITY</span>
+            </div>
+
+          </div>
+
+          <div class="welcome-content" data-reveal>
+
+            <span class="section-eyebrow">
+              WELCOME TO GRANDVISTA
+            </span>
+
+            <h2>
+              More Than A Stay.
+              <em>A Beautiful Experience.</em>
+            </h2>
+
+            <p>
+              At GrandVista Luxury Hotel, hospitality is about more
+              than providing a place to sleep. It is about creating
+              an atmosphere where every detail contributes to comfort,
+              relaxation and memorable moments.
+            </p>
+
+            <p>
+              From thoughtfully presented guest rooms to inviting
+              dining spaces and carefully considered guest services,
+              our hotel concept celebrates the finer details of
+              modern hospitality.
+            </p>
+
+            <div class="welcome-highlights">
+
+              <div class="welcome-highlight">
+                <span class="highlight-icon">✦</span>
+                <div>
+                  <h3>Elegant Accommodation</h3>
+                  <p>Comfortable spaces designed around relaxation.</p>
+                </div>
+              </div>
+
+              <div class="welcome-highlight">
+                <span class="highlight-icon">✦</span>
+                <div>
+                  <h3>Thoughtful Hospitality</h3>
+                  <p>A welcoming approach to every guest experience.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="about.html" class="text-link">
+              Discover Our Story <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience-section">
+
+      <div class="experience-background"></div>
+      <div class="experience-overlay"></div>
+
+      <div class="container experience-container" data-reveal>
+
+        <span class="section-eyebrow light-eyebrow">
+          THE GRANDVISTA EXPERIENCE
+        </span>
+
+        <h2>
+          Every Moment Deserves
+          <em>Something Exceptional.</em>
+        </h2>
+
+        <p>
+          Discover an atmosphere inspired by timeless elegance,
+          contemporary design and the simple pleasure of feeling
+          completely at ease.
+        </p>
+
+        <a href="services.html" class="btn btn-primary">
+          Explore Our Experiences <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- ROOMS PREVIEW -->
+    <section class="rooms-preview section-padding">
+
+      <div class="container">
+
+        <div class="section-heading" data-reveal>
+
+          <div>
+            <span class="section-eyebrow">STAY IN COMFORT</span>
+            <h2>Our Rooms & <em>Suites</em></h2>
+          </div>
+
+          <a href="rooms.html" class="text-link">
+            View All Rooms <span>→</span>
+          </a>
+
+        </div>
+
+        <div class="room-preview-grid">
+
+          <article class="room-preview-card" data-reveal>
+
+            <a href="room-details.html?room=deluxe-room" class="room-preview-image">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85"
+                alt="Deluxe hotel room"
+                loading="lazy"
+              >
+              <span class="room-image-label">01 / DELUXE COLLECTION</span>
+            </a>
+
+            <div class="room-preview-content">
+              <span class="room-type">COMFORT & ELEGANCE</span>
+              <h3>Deluxe Room</h3>
+
+              <p>
+                An inviting accommodation concept featuring elegant
+                interiors, a relaxing atmosphere and thoughtful details.
+              </p>
+
+              <a href="room-details.html?room=deluxe-room" class="room-link">
+                Discover Room <span>→</span>
+              </a>
+            </div>
+
+          </article>
+
+          <article class="room-preview-card" data-reveal>
+
+            <a href="room-details.html?room=executive-suite" class="room-preview-image">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=85"
+                alt="Executive hotel suite"
+                loading="lazy"
+              >
+              <span class="room-image-label">02 / EXECUTIVE COLLECTION</span>
+            </a>
+
+            <div class="room-preview-content">
+              <span class="room-type">SPACE & SOPHISTICATION</span>
+              <h3>Executive Suite</h3>
+
+              <p>
+                A spacious suite concept combining refined styling,
+                comfortable living areas and an elevated guest experience.
+              </p>
+
+              <a href="room-details.html?room=executive-suite" class="room-link">
+                Discover Suite <span>→</span>
+              </a>
+            </div>
+
+          </article>
+
+          <article class="room-preview-card" data-reveal>
+
+            <a href="room-details.html?room=premium-suite" class="room-preview-image">
+              <img
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+                alt="Premium luxury hotel suite"
+                loading="lazy"
+              >
+              <span class="room-image-label">03 / PREMIUM COLLECTION</span>
+            </a>
+
+            <div class="room-preview-content">
+              <span class="room-type">REFINED LUXURY</span>
+              <h3>Premium Suite</h3>
+
+              <p>
+                A beautifully presented accommodation concept for
+                guests who appreciate generous space and modern elegance.
+              </p>
+
+              <a href="room-details.html?room=premium-suite" class="room-link">
+                Discover Suite <span>→</span>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- HOTEL FEATURES -->
+    <section class="features-section section-padding">
+
+      <div class="container">
+
+        <div class="section-heading centered-heading" data-reveal>
+          <span class="section-eyebrow">DESIGNED AROUND YOU</span>
+          <h2>Spaces For Every <em>Experience</em></h2>
+          <p>
+            Explore the facilities and experiences that make a hotel
+            stay feel complete, from relaxation to dining and personal
+            comfort.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-number">01</span>
+            <span class="feature-icon">✦</span>
+            <h3>Swimming Pool</h3>
+            <p>
+              An inviting leisure space designed for relaxation,
+              quiet moments and refreshing experiences.
+            </p>
+            <a href="services.html">Explore Facilities →</a>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-number">02</span>
+            <span class="feature-icon">✧</span>
+            <h3>Fine Dining</h3>
+            <p>
+              Discover a dining experience inspired by appealing
+              presentation, flavour and welcoming surroundings.
+            </p>
+            <a href="restaurant.html">Explore Dining →</a>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-number">03</span>
+            <span class="feature-icon">◇</span>
+            <h3>Wellness & Relaxation</h3>
+            <p>
+              Enjoy the idea of dedicated spaces for rest,
+              personal wellness and a slower pace of life.
+            </p>
+            <a href="services.html">Discover More →</a>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-number">04</span>
+            <span class="feature-icon">⌂</span>
+            <h3>Guest Services</h3>
+            <p>
+              Thoughtful guest support designed to make each
+              stage of a hotel visit feel convenient.
+            </p>
+            <a href="services.html">View Our Services →</a>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DINING SECTION -->
+    <section class="dining-section">
+
+      <div class="dining-image">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=85"
+          alt="Elegant restaurant dining experience"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="dining-content" data-reveal>
+
+        <span class="section-eyebrow">A TASTE OF GRANDVISTA</span>
+
+        <h2>
+          Beautiful Dining.
+          <em>Memorable Moments.</em>
+        </h2>
+
+        <p>
+          Discover a welcoming restaurant atmosphere where appealing
+          interiors, thoughtful presentation and the pleasure of
+          sharing a meal come together.
+        </p>
+
+        <p>
+          Whether you are planning a relaxed breakfast, a special
+          dinner or an enjoyable gathering, explore our dining concept
+          and discover what makes the experience special.
+        </p>
+
+        <a href="restaurant.html" class="btn btn-dark">
+          Explore Restaurant <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- TESTIMONIAL STYLE SECTION -->
+    <section class="quote-section section-padding">
+
+      <div class="container" data-reveal>
+
+        <span class="quote-symbol">“</span>
+
+        <span class="section-eyebrow">THE ART OF A WELCOMING STAY</span>
+
+        <h2>
+          The finest hospitality is found in
+          <em>the details.</em>
+        </h2>
+
+        <p>
+          A thoughtful atmosphere, comfortable surroundings and
+          attention to the guest experience can transform an ordinary
+          visit into something memorable.
+        </p>
+
+        <span class="quote-divider"></span>
+
+        <span class="quote-signature">THE GRANDVISTA PHILOSOPHY</span>
+
+      </div>
+
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+
+      <div class="final-cta-background"></div>
+      <div class="final-cta-overlay"></div>
+
+      <div class="container final-cta-content" data-reveal>
+
+        <span class="section-eyebrow light-eyebrow">
+          YOUR NEXT EXPERIENCE STARTS HERE
+        </span>
+
+        <h2>
+          Make Room For
+          <em>Something Wonderful.</em>
+        </h2>
+
+        <p>
+          Explore our accommodation concepts, discover our facilities
+          and get in touch to make an enquiry about your preferred stay.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="rooms.html" class="btn btn-primary">
+            Explore Accommodation <span>↗</span>
+          </a>
+
+          <a href="contact.html" class="btn btn-outline">
+            Contact GrandVista
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="hotel-logo footer-logo">
+            <span class="logo-symbol">GV</span>
+
+            <span class="logo-text">
+              <strong>GRANDVISTA</strong>
+              <small>LUXURY HOTEL</small>
+            </span>
+          </a>
+
+          <p>
+            An elegant hospitality concept inspired by thoughtful
+            service, beautiful surroundings and memorable experiences.
+          </p>
+
+          <span class="footer-motto">
+            COMFORT · STYLE · HOSPITALITY
+          </span>
+
+        </div>
+
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms & Suites</a>
+          <a href="services.html">Hotel Services</a>
+          <a href="restaurant.html">Restaurant</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Discover</h3>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="rooms.html">Accommodation</a>
+          <a href="services.html">Facilities</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Get In Touch</h3>
+          <p>Interested in discovering GrandVista?</p>
+          <a href="contact.html" class="footer-contact-link">
+            Make An Enquiry →
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> GrandVista Luxury Hotel. All rights reserved.</p>
+        <a href="index.html">Back To Top ↑</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    ↑
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

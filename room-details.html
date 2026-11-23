@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Explore accommodation details at GrandVista Luxury Hotel. Discover room features, elegant interiors and accommodation options."
+  >
+
+  <meta name="theme-color" content="#123d32">
+
+  <title>Room Details | GrandVista Luxury Hotel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <span class="loader-logo">GV</span>
+      <p>GRANDVISTA LUXURY HOTEL</p>
+      <span class="loader-line"></span>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+      <a href="index.html" class="hotel-logo">
+        <span class="logo-symbol">GV</span>
+
+        <span class="logo-text">
+          <strong>GRANDVISTA</strong>
+          <small>LUXURY HOTEL</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navWrap"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-wrap" id="navWrap">
+
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="rooms.html" class="active">Rooms & Suites</a>
+          <a href="services.html">Services</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="header-booking">
+          Make An Enquiry <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ROOM DETAIL HERO -->
+    <section class="room-detail-hero">
+
+      <div class="room-detail-hero-background"></div>
+      <div class="room-detail-hero-overlay"></div>
+
+      <div class="container room-detail-hero-container">
+
+        <div class="room-detail-hero-content" data-reveal>
+
+          <div class="room-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="rooms.html">Rooms & Suites</a>
+            <span>/</span>
+            <span>Room Details</span>
+          </div>
+
+          <span class="section-eyebrow light-eyebrow" id="roomDetailEyebrow">
+            DELUXE COLLECTION
+          </span>
+
+          <h1 id="roomDetailTitle">
+            Deluxe Room
+          </h1>
+
+          <p id="roomDetailSubtitle">
+            Comfort, elegance and a welcoming atmosphere come together
+            in this thoughtfully presented accommodation concept.
+          </p>
+
+          <div class="room-detail-hero-actions">
+
+            <a href="#room-overview" class="btn btn-primary">
+              Discover This Room <span>↗</span>
+            </a>
+
+            <a
+              href="contact.html?room=deluxe-room#contact-form"
+              class="btn btn-outline"
+              id="roomHeroEnquiry"
+            >
+              Make An Enquiry
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="room-detail-hero-label">
+        THE GRANDVISTA ACCOMMODATION COLLECTION
+      </div>
+
+    </section>
+
+
+    <!-- ROOM GALLERY -->
+    <section class="room-gallery-section section-padding">
+
+      <div class="container">
+
+        <div class="room-detail-section-heading" data-reveal>
+
+          <div>
+            <span class="section-eyebrow">
+              A CLOSER LOOK
+            </span>
+
+            <h2>
+              Explore The <em>Space.</em>
+            </h2>
+          </div>
+
+          <p>
+            Explore the accommodation concept through its
+            interiors, thoughtful design details and welcoming
+            living spaces.
+          </p>
+
+        </div>
+
+
+        <div class="room-detail-gallery" data-reveal>
+
+          <!-- MAIN IMAGE -->
+          <div class="room-gallery-main">
+
+            <img
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1500&q=90"
+              alt="GrandVista deluxe room interior"
+              id="roomMainImage"
+            >
+
+            <span class="gallery-image-label">
+              GRANDVISTA INTERIOR COLLECTION
+            </span>
+
+          </div>
+
+
+          <!-- THUMBNAIL IMAGES -->
+          <div class="room-gallery-thumbnails">
+
+            <button
+              type="button"
+              class="room-gallery-thumb active"
+              data-image="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1500&q=90"
+              aria-label="View room interior photograph 1"
+              aria-pressed="true"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=80"
+                alt="Room interior view"
+              >
+
+            </button>
+
+
+            <button
+              type="button"
+              class="room-gallery-thumb"
+              data-image="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1500&q=90"
+              aria-label="View room interior photograph 2"
+              aria-pressed="false"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=500&q=80"
+                alt="Bedroom interior detail"
+              >
+
+            </button>
+
+
+            <button
+              type="button"
+              class="room-gallery-thumb"
+              data-image="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1500&q=90"
+              aria-label="View room interior photograph 3"
+              aria-pressed="false"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=500&q=80"
+                alt="Elegant accommodation interior"
+              >
+
+            </button>
+
+
+            <button
+              type="button"
+              class="room-gallery-thumb"
+              data-image="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1500&q=90"
+              aria-label="View room interior photograph 4"
+              aria-pressed="false"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=500&q=80"
+                alt="Living area interior detail"
+              >
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROOM OVERVIEW -->
+    <section class="room-overview-section" id="room-overview">
+
+      <div class="container room-overview-grid">
+
+        <div class="room-overview-content" data-reveal>
+
+          <span class="section-eyebrow">
+            ACCOMMODATION OVERVIEW
+          </span>
+
+          <h2>
+            Designed Around
+            <em>Your Comfort.</em>
+          </h2>
+
+          <p id="roomDetailDescription">
+            The Deluxe Room introduces a welcoming accommodation
+            experience through thoughtful interior styling,
+            carefully coordinated furnishings and a relaxing
+            atmosphere.
+
+            Its design places emphasis on comfort, functionality
+            and the finer details that help make a guest room
+            feel inviting and personal.
+          </p>
+
+          <p>
+            Explore the accommodation concept, review its
+            features and contact GrandVista to discuss your
+            preferred travel dates and room requirements.
+          </p>
+
+          <a
+            href="contact.html?room=deluxe-room#contact-form"
+            class="text-link"
+            id="roomOverviewEnquiry"
+          >
+            Enquire About This Room <span>→</span>
+          </a>
+
+        </div>
+
+
+        <!-- ROOM INFORMATION -->
+        <aside class="room-information-card" data-reveal>
+
+          <span class="section-eyebrow">
+            ROOM INFORMATION
+          </span>
+
+          <h3>Accommodation Details</h3>
+
+          <div class="room-information-list">
+
+            <div class="room-information-item">
+              <span>Collection</span>
+              <strong id="roomInfoCollection">Deluxe Collection</strong>
+            </div>
+
+            <div class="room-information-item">
+              <span>Accommodation Style</span>
+              <strong id="roomInfoStyle">Deluxe Room</strong>
+            </div>
+
+            <div class="room-information-item">
+              <span>Design Approach</span>
+              <strong id="roomInfoDesign">Comfort & Elegance</strong>
+            </div>
+
+            <div class="room-information-item">
+              <span>Room Category</span>
+              <strong id="roomInfoCategory">Standard Collection</strong>
+            </div>
+
+            <div class="room-information-item">
+              <span>Pricing</span>
+              <strong>Enquiry Required</strong>
+            </div>
+
+            <div class="room-information-item">
+              <span>Availability</span>
+              <strong>Contact To Confirm</strong>
+            </div>
+
+          </div>
+
+          <a
+            href="contact.html?room=deluxe-room#contact-form"
+            class="room-information-button"
+            id="roomInformationEnquiry"
+          >
+            Request Accommodation Details <span>↗</span>
+          </a>
+
+          <p class="room-information-note">
+            Room rates, availability and specific arrangements
+            require confirmation from the hotel.
+          </p>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROOM FEATURES -->
+    <section class="room-detail-features-section section-padding">
+
+      <div class="container">
+
+        <div class="room-detail-section-heading centered-room-heading" data-reveal>
+
+          <span class="section-eyebrow">
+            THE DETAILS THAT MATTER
+          </span>
+
+          <h2>
+            Features & <em>Highlights.</em>
+          </h2>
+
+          <p>
+            Discover the defining elements of this accommodation
+            concept, from its visual character to the features
+            that contribute to an enjoyable stay.
+          </p>
+
+        </div>
+
+
+        <div class="room-detail-features-grid" id="roomDetailFeatures">
+
+          <article class="room-detail-feature" data-reveal>
+            <span class="room-feature-icon">✦</span>
+            <h3>Elegant Interior</h3>
+            <p>
+              A coordinated design approach with thoughtful
+              furnishings and welcoming details.
+            </p>
+          </article>
+
+          <article class="room-detail-feature" data-reveal>
+            <span class="room-feature-icon">◇</span>
+            <h3>Comfortable Living</h3>
+            <p>
+              A relaxing accommodation concept designed
+              around comfort and everyday convenience.
+            </p>
+          </article>
+
+          <article class="room-detail-feature" data-reveal>
+            <span class="room-feature-icon">✧</span>
+            <h3>Private Space</h3>
+            <p>
+              An inviting personal environment for guests
+              seeking a comfortable place to unwind.
+            </p>
+          </article>
+
+          <article class="room-detail-feature" data-reveal>
+            <span class="room-feature-icon">⌂</span>
+            <h3>Thoughtful Layout</h3>
+            <p>
+              A considered room arrangement that balances
+              practical use with attractive presentation.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROOM AMENITIES -->
+    <section class="room-amenities-section section-padding">
+
+      <div class="container room-amenities-layout">
+
+        <div class="room-amenities-image" data-reveal>
+
+          <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+            alt="Elegant and thoughtfully furnished hotel interior"
+            loading="lazy"
+          >
+
+          <div class="room-amenities-image-caption">
+            <span>THE GRANDVISTA APPROACH</span>
+            <strong>Comfort In Every Detail.</strong>
+          </div>
+
+        </div>
+
+
+        <div class="room-amenities-content" data-reveal>
+
+          <span class="section-eyebrow">
+            ACCOMMODATION HIGHLIGHTS
+          </span>
+
+          <h2>
+            A Considered
+            <em>Guest Experience.</em>
+          </h2>
+
+          <p>
+            An enjoyable accommodation experience is shaped
+            by more than appearance alone. Thoughtful room
+            planning, practical features and clear guest
+            information all contribute to a comfortable stay.
+          </p>
+
+          <p>
+            Explore the following accommodation highlights
+            and contact the hotel to confirm which amenities
+            and arrangements are available for your selected room.
+          </p>
+
+          <div class="room-amenities-list" id="roomDetailAmenities">
+
+            <div class="room-amenity-item">
+              <span>✦</span>
+              <p>Comfortable bedding concept</p>
+            </div>
+
+            <div class="room-amenity-item">
+              <span>✦</span>
+              <p>Private bathroom concept</p>
+            </div>
+
+            <div class="room-amenity-item">
+              <span>✦</span>
+              <p>Thoughtfully planned interiors</p>
+            </div>
+
+            <div class="room-amenity-item">
+              <span>✦</span>
+              <p>Welcoming guest environment</p>
+            </div>
+
+          </div>
+
+          <p class="room-amenities-note">
+            Specific amenities are illustrative examples and
+            should be confirmed directly with the hotel.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ACCOMMODATION ENQUIRY -->
+    <section class="room-detail-enquiry-section" id="room-enquiry">
+
+      <div class="room-detail-enquiry-background"></div>
+      <div class="room-detail-enquiry-overlay"></div>
+
+      <div class="container room-detail-enquiry-content" data-reveal>
+
+        <span class="section-eyebrow light-eyebrow">
+          YOUR ACCOMMODATION JOURNEY
+        </span>
+
+        <h2>
+          Interested In This
+          <em>Accommodation?</em>
+        </h2>
+
+        <p>
+          Tell us about your preferred travel dates, number
+          of guests and accommodation requirements. Our
+          enquiry process gives you a way to request the
+          information you need before making a reservation.
+        </p>
+
+        <div class="room-enquiry-actions">
+
+          <a
+            href="contact.html?room=deluxe-room#contact-form"
+            class="btn btn-primary"
+            id="roomFinalEnquiry"
+          >
+            Enquire About This Room <span>↗</span>
+          </a>
+
+          <a href="rooms.html" class="btn btn-outline">
+            Explore Other Rooms
+          </a>
+
+        </div>
+
+        <span class="room-enquiry-note">
+          Accommodation availability and rates must be confirmed
+          before any reservation is made.
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- OTHER ACCOMMODATION -->
+    <section class="other-rooms-section section-padding">
+
+      <div class="container">
+
+        <div class="section-heading" data-reveal>
+
+          <div>
+            <span class="section-eyebrow">
+              EXPLORE MORE
+            </span>
+
+            <h2>
+              Other Accommodation
+              <em>Options.</em>
+            </h2>
+          </div>
+
+          <a href="rooms.html" class="text-link">
+            View All Rooms <span>→</span>
+          </a>
+
+        </div>
+
+
+        <div class="other-rooms-grid">
+
+          <article class="other-room-card" data-reveal>
+
+            <a href="room-details.html?room=executive-suite">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85"
+                alt="Executive suite accommodation"
+                loading="lazy"
+              >
+            </a>
+
+            <div class="other-room-card-content">
+              <span>EXECUTIVE COLLECTION</span>
+              <h3>Executive Suite</h3>
+
+              <a href="room-details.html?room=executive-suite">
+                Discover Suite →
+              </a>
+            </div>
+
+          </article>
+
+
+          <article class="other-room-card" data-reveal>
+
+            <a href="room-details.html?room=premium-suite">
+              <img
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
+                alt="Premium suite accommodation"
+                loading="lazy"
+              >
+            </a>
+
+            <div class="other-room-card-content">
+              <span>PREMIUM COLLECTION</span>
+              <h3>Premium Suite</h3>
+
+              <a href="room-details.html?room=premium-suite">
+                Discover Suite →
+              </a>
+            </div>
+
+          </article>
+
+
+          <article class="other-room-card" data-reveal>
+
+            <a href="room-details.html?room=family-suite">
+              <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                alt="Family suite accommodation concept"
+                loading="lazy"
+              >
+            </a>
+
+            <div class="other-room-card-content">
+              <span>FAMILY COLLECTION</span>
+              <h3>Family Suite</h3>
+
+              <a href="room-details.html?room=family-suite">
+                Discover Suite →
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="hotel-logo footer-logo">
+            <span class="logo-symbol">GV</span>
+
+            <span class="logo-text">
+              <strong>GRANDVISTA</strong>
+              <small>LUXURY HOTEL</small>
+            </span>
+          </a>
+
+          <p>
+            An elegant hospitality concept inspired by
+            thoughtful service, beautiful surroundings and
+            memorable guest experiences.
+          </p>
+
+          <span class="footer-motto">
+            COMFORT · STYLE · HOSPITALITY
+          </span>
+
+        </div>
+
+
+        <div class="footer-links">
+
+          <h3>Explore</h3>
+
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms & Suites</a>
+          <a href="services.html">Hotel Services</a>
+          <a href="restaurant.html">Restaurant</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+          <h3>Discover</h3>
+
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="rooms.html">Accommodation</a>
+          <a href="services.html">Facilities</a>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+          <h3>Get In Touch</h3>
+
+          <p>
+            Have questions about your preferred accommodation?
+            Contact GrandVista to make an enquiry.
+          </p>
+
+          <a href="contact.html" class="footer-contact-link">
+            Contact GrandVista →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="currentYear"></span>
+          GrandVista Luxury Hotel. All rights reserved.
+        </p>
+
+        <a href="#">Back To Top ↑</a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- BACK TO TOP -->
+  <button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
